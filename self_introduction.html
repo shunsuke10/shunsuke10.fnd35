@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#000000">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>自己紹介HP</title>
+  </head>
+
+  <body>
+		<!--ナビゲーション-->
+		<header>
+      <h1>Hello!</h1>
+      <nav id="Home_Page_Menu">
+        <ul>
+          <li class="current"><a href="index.html">TOP</a></li>
+          <li class="self_introduction"><a href="self_introduction.html">自己紹介</a></li>
+          <li class="license"><a href="license.html">保有資格</a></li>
+          <li class="hobby"><a href="hobby.html">趣味</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--/ナビゲーション-->
+
+    <!--wrapper-->
+    <div id="wrapper">
+      <!--メイン-->
+      <div id="main">
+        <!--パンくずリスト-->
+        <div id="breadcrumb">
+          <ol>
+            <li><a href="index.html">TOP</a></li>
+            <li>自己紹介</li>
+          </ol>
+        </div>
+        <!--/パンくずリスト-->
+        <article>
+          <h1>自己紹介</h1>
+          <section>
+            <h2>プロフィール</h2>
+            <!--表を作成-->
+            <table>
+              <!--表の行-->
+              <tr>
+                <th>氏名</th>
+                <td>中村 駿介</td>
+              </tr>
+              <tr>
+                <th>出身</th>
+                <td>長崎🏝️ 近くの海でよく船釣りをしていました🎣🛶</td>
+              </tr>
+              <tr>
+                <th>家族構成</th>
+                <td>自分 妻 🏠</td>
+              </tr>
+              <tr>
+                <th>趣味</th>
+                <td>サッカー観戦⚽ ゲーム🎮 旅行✈️</td>
+              </tr>
+              <tr>
+                <th>特技</th>
+                <td>サッカー⚽ ハンドボール🤾‍♂️ スノーボード🏂</td>
+              </tr>
+            </table>
+            <h2>私の年齢</h2>
+            <div id="ageCalculation">
+              <p>
+                <input type="text" id="birthYear" size="4" maxlength="4">年
+                <input type="text" id="birthMonth" size="2" maxlength="2">月
+                <input type="text" id="birthDate" size="2" maxlength="2">日
+                <input type="button" value="計算" class = "button" onclick="getAge()">
+              </p>
+              <p><span id="age">  </span> </p>
+              <script src="script.js"></script>
+            </div>
+          </section>
+        </article>
+      </div>
+      <!--/メイン-->
+    </div>
+    <!--/wrapper-->
+  </body>
+</html>
